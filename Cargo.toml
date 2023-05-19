@@ -1,0 +1,14 @@
+[package]
+name = "iot-telemetry-rust-course"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "final-project"
+path = "final-project/src/main.rs"
+
+[dependencies]
+tokio = { version = "1.28", features = ["full"] }
+serde = { version = "1.0.160", features = ["derive"] }
+hex = "0.4.3"
+chrono = { version = "0.4.24", features = ["serde"] }
